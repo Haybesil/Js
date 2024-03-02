@@ -94,24 +94,24 @@ let firstList = document.createElement('ul');
 let secondList = document.createElement('ul');
 let thirdList = document.createElement('ul');
 
-let secondItemContents = ['About', 'Home', 'Services'];
-let thirdItemContents = ['Company', 'Limit', 'Stages'];
-let fourthItemContents = ['Links', 'Js', 'Courses'];
+let firstItemContents = ['About', 'Home', 'Services'];
+let secondItemContents = ['Company', 'Limit', 'Stages'];
+let thirdItemContents = ['Links', 'Js', 'Courses'];
 
-for (let i = 0; i < secondItemContents.length; i++) {
+for (let i = 0; i < firstItemContents.length; i++) {
     // Create a new list item
+    let firstListItem = document.createElement('li');
     let secondListItem = document.createElement('li');
     let thirdListItem = document.createElement('li');
-    let fourthListItem = document.createElement('li');
 
+    firstListItem.textContent = firstItemContents[i];
     secondListItem.textContent = secondItemContents[i];
     thirdListItem.textContent = thirdItemContents[i];
-    fourthListItem.textContent = fourthItemContents[i];
 
 
-    firstList.append(secondListItem);
-    secondList.append(thirdListItem);
-    thirdList.append(fourthListItem);
+    firstList.append(firstListItem);
+    secondList.append(secondListItem);
+    thirdList.append(thirdListItem);
 }
 
 document.body.append(section);
